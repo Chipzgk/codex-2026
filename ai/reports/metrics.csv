@@ -1,0 +1,5 @@
+method,precision,recall,f1,event_recall,median_delay_min,false_alarms_per_day,sensor_faults_raised_as_danger
+threshold,0.328,0.539,0.408,24/24,30.0,1.46,7/22
+iforest,0.154,0.037,0.059,8/24,40.0,0.89,0/22
+fuzzy_only,0.606,0.464,0.525,24/24,70.0,1.14,3/22
+hybrid,0.604,0.473,0.53,24/24,70.0,1.18,3/22
