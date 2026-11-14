@@ -13,14 +13,19 @@
 
 ## 2. Ma trận yêu cầu → test
 
-| ID | Yêu cầu | Story | Test |
-|---|---|---|---|
-| F01 | Cài và mở lại app | US-1.1 | T01 |
-| F02 | Chọn nguồn: ngày bình thường, các kịch bản sự cố | US-2.1, US-2.2 | T02, T03, T04 |
-| F04 | Sụt DO cho anomaly cao rõ so với ngày bình thường | US-1.1 | T02, T04 |
-| F05 | Cảm biến kẹt và nhiễu trả `sensor_check`, không trả nguy hiểm | US-1.3 | T03 |
-| F06 | Risk, mức, giải thích tiếng Việt, ≥ 1 hành động | US-1.2 | T02 |
-| F08 | Lỗi mạng / backend: báo rõ, hết loading | US-3.4 | T06, T08 |
+Mã FR/NFR/BR theo [PRD.md](PRD.md).
+
+| Yêu cầu | Story | Test |
+|---|---|---|
+| FR-01 Chọn ao | US-1.3 | T01, T03 |
+| FR-02 Kịch bản sự cố | US-2.1 | T02, T03, T04 |
+| FR-03 Mô tả tình huống bằng lời | US-2.2 | T02 |
+| FR-04, FR-05 Thẻ rủi ro real-time, lý do, hành động | US-1.1, US-1.2 | T01, T02 |
+| BR-2 Cảm biến lỗi không thành nguy hiểm | US-1.3 | T03 |
+| FR-07 So sánh với ngưỡng cố định | US-3.2 | T02, T03 |
+| FR-08, BR-3 Thông báo chống lặp | US-3.1 | T02 |
+| NFR-03 Không hỏng khi LLM lỗi | US-2.2 | T02 (không có key) |
+| NFR-05 Mất kết nối | US-3.3 | T06, T08 |
 
 ## 3. Kịch bản kiểm tay
 

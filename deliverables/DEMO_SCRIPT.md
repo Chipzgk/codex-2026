@@ -4,7 +4,7 @@
 
 | Thời lượng | Thao tác | Bằng chứng giám khảo nhìn thấy | Ghi chú |
 |---|---|---|---|
-| 00:00–00:35 | Nêu vấn đề của người nuôi cá ao | — | Job-to-be-done ở [PROJECT_BRIEF.md](PROJECT_BRIEF.md) |
+| 00:00–00:35 | Kể về hộ nuôi U01: cá chết do thiếu oxy, tối phải ra ao canh, "thường cá chết rồi mới biết" | Ghi nhận phỏng vấn | [USER_RESEARCH.md](USER_RESEARCH.md) |
 | 00:35–01:00 | Force-stop app, mở lại từ icon trên điện thoại | App thật, nhãn **Live** | |
 | 01:00–01:50 | Chọn ao → gõ "3 giờ sáng mất điện, máy sục khí ngừng" → Chạy real-time | Kịch bản do LLM viết; thẻ chuyển Nguy hiểm, lý do nêu DO, hành động "Bật máy sục khí ngay"; thông báo bật lên | |
 | 01:50–02:40 | Chọn "Cảm biến kẹt" (hoặc ao 2 · cảm biến lỗi thật) → Chạy | "KIỂM TRA CẢM BIẾN", **không** báo nguy hiểm; cột Ngưỡng cố định vẫn "BÁO ĐỘNG" | Điểm khác biệt chính |
@@ -14,7 +14,7 @@
 
 ## Câu mở đầu
 
-"Người nuôi cá ao nhìn từng con số đo và khó biết lúc nào là nguy hiểm thật, lúc nào chỉ là máy đo lỗi. Với PondGuard, họ biết ngay khi nào ao nguy hiểm thật và không bị báo động giả khi máy đo lỗi. Bây giờ chúng tôi sẽ đóng hẳn, mở lại app trên điện thoại này và chạy một lượt AI mới."
+"Chúng tôi đã nói chuyện với một hộ nuôi cá rô và cá chép 2 năm. Cá của họ từng chết vì thiếu oxy, tối nào cũng phải ra ao xem, và thường cá chết rồi mới biết. Với PondGuard, họ biết ngay khi nào ao nguy hiểm thật và không bị báo động giả khi máy đo lỗi. Bây giờ chúng tôi sẽ đóng hẳn, mở lại app trên điện thoại này và chạy một lượt AI mới."
 
 ## Câu hỏi có thể gặp
 
