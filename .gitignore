@@ -13,3 +13,12 @@ coverage
 
 _bmad/custom/config.user.toml
 _bmad/config.user.toml
+
+# PondGuard
+ai/data/
+ai/reports/figures/
+kaggle.json
+__pycache__/
+*.pyc
+mobile/node_modules/
+mobile/.expo/

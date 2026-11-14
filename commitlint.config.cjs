@@ -6,6 +6,7 @@ const SCOPE_TYPE_MAP = {
   web: ALL,
   api: ALL,
   ai: ALL,
+  mobile: ALL,
   docs: ['docs', 'chore']
 };
 
