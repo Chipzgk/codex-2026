@@ -1,15 +1,16 @@
 # Project Brief — PondGuard
 
 > Status: v1 · 14/11/2026 · Sự kiện "AI Trong Lòng Bàn Tay", Hà Nội. Nguồn: bản đặc tả "PondGuard — Đặc tả Prototype
-> Android" (v1.0) và source `0e71707`. Trạng thái từng tính năng: [PRD.md §3](PRD.md).
+> Android" và source `0e71707`. Yêu cầu chức năng: [PRD.md §3](PRD.md).
 
 ## 1. Bối cảnh và vấn đề
 
-- **Người dùng đầu tiên:** hộ nuôi cá rô phi ao đất quy mô nhỏ, tự quản lý ao, dùng điện thoại Android. Họ đo nước thủ công hoặc có máy đo rẻ và nhìn từng con số riêng lẻ.
-- **Khó khăn (giả thuyết, chưa xác thực với người nuôi):**
+- **Người dùng đầu tiên:** hộ nuôi cá ao quy mô nhỏ, tự quản lý ao, dùng điện thoại Android.
+- **Đã xác nhận với hộ nuôi U01** ([USER_RESEARCH.md](USER_RESEARCH.md)): cá chết do thiếu oxy; thường cá chết rồi mới biết; tối phải ra ao xem cá, tốn thời gian. Hộ này chưa dùng thiết bị đo nào.
+- **Giả thuyết cho hộ đã có cảm biến** (chưa phỏng vấn):
   - Khó biết biến động nào là bình thường theo nhịp ngày đêm, biến động nào là dấu hiệu nguy hiểm.
   - Ngưỡng cố định chỉ báo khi DO đã quá thấp.
-  - Máy đo hoặc cảm biến báo sai (kẹt, nhiễu, hết pin) làm người nuôi mất niềm tin vào cảnh báo.
+  - Cảm biến báo sai (kẹt, nhiễu) làm người nuôi mất niềm tin vào cảnh báo.
 - **Tình huống điển hình:** buổi tối, nhiệt độ nước cao, DO giảm dần. Người nuôi cần quyết định có bật quạt nước/sục khí sớm không.
 
 **Job-to-be-done:** "Khi nước ao thay đổi, tôi muốn biết sớm đó là nguy hiểm thật hay chỉ là máy đo sai, và cần làm gì ngay, để không mất cá và không phải thức canh cả đêm."

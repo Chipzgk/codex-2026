@@ -17,7 +17,7 @@ Từ chuỗi số đo cảm biến của một ao (chủ yếu oxy hòa tan DO),
 
 | Hạng mục | Nội dung |
 |---|---|
-| Nguồn | Kaggle `ogbuokiriblessing/sensor-based-aquaponics-fish-pond-datasets` — cảm biến IoT ao cá aquaponics (Nigeria) |
+| Nguồn | Kaggle `ogbuokiriblessing/sensor-based-aquaponics-fish-pond-datasets` — cảm biến IoT ao cá aquaponics (Nigeria), mô tả trong bài báo của Udanor và cộng sự trên *Data in Brief* ([PMC9253161](https://omicsdi.org/dataset/biostudies-literature/S-EPMC9253161)) |
 | Không có trong repo | `ai/data/` bị gitignore. Muốn chạy lại phải tải dữ liệu (lệnh ở [`ai/README.md`](../ai/README.md)) |
 | Tiền xử lý | Gom về bước 10 phút, lấy đoạn liên tục dài nhất của mỗi ao, bỏ ao có dưới 24 giờ |
 | Chia train/test | Mỗi ao: 50% đầu (sạch) để train, 50% sau chèn sự cố có nhãn để test |
@@ -82,6 +82,9 @@ Tính riêng cho DO và pH, chỉ dùng dữ liệu quá khứ và hiện tại:
 ### 3.4. Fuzzy Mamdani ([fuzzy_risk.py](../ai/pondguard/fuzzy_risk.py))
 
 Ngưỡng DO cho cá nước ấm lấy từ tài liệu và **cố định trước khi xem kết quả đánh giá**: dưới 3 mg/L nguy hiểm, 3–5 gây stress, trên 5 tốt.
+Chưa có ngưỡng DO tối thiểu được công nhận chung cho cá nước ấm. Boyd khuyến cáo DO trong ao rô phi không xuống dưới 1 mg/L
+([Global Seafood Alliance](https://www.globalseafood.org/advocate/dissolved-oxygen-concentrations-pond-aquaculture/)); mức khuyến nghị 5 mg/L
+được nêu trong [Advances in Veterinary Research](https://advetresearch.com/index.php/AVR/article/download/1926/1289). Ngưỡng 3–5 mg/L của PondGuard nằm giữa hai mốc này và cần chuyên gia Việt Nam xác nhận.
 
 | Biến | Tập mờ (hình thang) |
 |---|---|
