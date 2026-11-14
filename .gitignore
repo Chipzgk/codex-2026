@@ -1,0 +1,15 @@
+node_modules
+.env
+.env.local
+.env.*.local
+dist
+.next
+coverage
+.DS_Store
+.vscode
+.idea
+
+# AI tooling (local)
+
+_bmad/custom/config.user.toml
+_bmad/config.user.toml
