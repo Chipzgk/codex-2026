@@ -1,6 +1,37 @@
-# codex-2026
+# PondGuard — cảnh báo ao nuôi có giải thích
 
-Repo cho hackathon Codex 2026. Hiện tại repo mới chỉ có bộ công cụ hỗ trợ làm việc với AI agent và quy ước commit, chưa có code ứng dụng.
+Repo của nhóm cho hackathon **AI Trong Lòng Bàn Tay** (Hà Nội, 14/11/2026).
+
+**Vấn đề.** Người nuôi cá ao nhìn từng con số đo riêng lẻ. Họ khó biết biến động nào là nguy hiểm thật, biến động nào chỉ là máy đo lỗi. Ngưỡng cố định thì báo động mỗi khi cảm biến nhảy số.
+
+**Giải pháp.** App di động cho biết ao đang **An toàn / Cần theo dõi / Nguy hiểm**, hoặc **Kiểm tra cảm biến** khi dữ liệu không đáng tin, kèm lý do bằng tiếng Việt và một hành động cụ thể. AI gồm ba lớp: kiểm tra độ tin cậy dữ liệu, Isolation Forest chấm điểm bất thường, Fuzzy Mamdani tổng hợp thành điểm rủi ro 0–100.
+
+**Kết quả** (dữ liệu cảm biến thật + sự cố chèn có nhãn, seed giữ riêng): so với ngưỡng cố định, PondGuard báo giả ít hơn (1,66 so với 2,43 đợt/ngày) và báo nhầm lỗi cảm biến thành nguy hiểm ít hơn (15% so với 26%); bắt được 100% sự cố thật như nhau; chậm hơn khoảng 10 phút. Isolation Forest chưa đóng góp thêm trên bộ dữ liệu này. Chi tiết: [`eval/results/report.md`](eval/results/report.md).
+
+| Thư mục | Nội dung |
+| --- | --- |
+| [`ai/`](ai/) | Pipeline AI, chèn sự cố, đánh giá 4 phương pháp, thí nghiệm concept drift |
+| [`api/`](api/) | FastAPI: mô phỏng, LLM viết kịch bản, WebSocket real-time, chống báo lặp |
+| [`mobile-expo/`](mobile-expo/) | App Expo (React Native) |
+| [`deliverables/`](deliverables/) | Tài liệu dự án: PRD, thiết kế AI, API, test plan, rủi ro, kịch bản demo, gói nộp |
+| [`docs/architecture_diagram.md`](docs/architecture_diagram.md) | Kiến trúc hệ thống |
+
+**Chạy nhanh** (chi tiết: [`deliverables/DEPLOYMENT.md`](deliverables/DEPLOYMENT.md)):
+
+```bash
+pip install -r ai/requirements.txt
+kaggle datasets download -d ogbuokiriblessing/sensor-based-aquaponics-fish-pond-datasets -p ai/data/raw --unzip
+python ai/scripts/run_pipeline.py --raw ai/data/raw --out ai/reports --processed ai/data/processed --exclude IoTPond2 IoTPond8
+uvicorn api.main:app --host 0.0.0.0 --port 8000
+
+cd mobile-expo && npm install && npx expo start   # sửa config.ts: OFFLINE=false, API_URL=http://<IP LAN>:8000
+```
+
+**Giới hạn đã biết:** dữ liệu là ao aquaponics (Nigeria), không phải ao rô phi Việt Nam; sự cố được chèn, không phải sự cố thật có nhãn. Tính năng: [`deliverables/PRD.md`](deliverables/PRD.md).
+
+---
+
+## Công cụ làm việc với AI agent và quy ước commit
 
 ## Có gì trong repo
 
@@ -63,6 +94,7 @@ type(scope): subject
 | `web` | Frontend | feat, fix, perf, refactor, style, test, docs, chore, revert |
 | `api` | Backend | như `web` |
 | `ai` | Model, pipeline, prompt | như `web` |
+| `mobile` | App di động (Expo, Flutter) | như `web` |
 | `docs` | Tài liệu | docs, chore |
 
 Ví dụ:
