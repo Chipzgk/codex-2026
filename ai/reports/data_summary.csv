@@ -1,0 +1,12 @@
+pond,raw_rows,freq,segment_hours,used,note
+IoTpond1,83126,10min,146.0,True,
+IoTPond10,315,10min,1.5,False,
+IoTPond11,748,10min,4.5,False,
+IoTPond12,34,10min,0.3,False,
+IoTPond2,172249,10min,,False,excluded
+IoTPond3,169185,10min,259.7,True,
+IoTPond4,89800,10min,146.0,True,
+IoTPond6,91049,10min,206.2,True,
+IoTPond7,279612,10min,326.5,True,
+IoTPond8,56,10min,,False,excluded
+IoTPond9,151785,10min,259.2,True,

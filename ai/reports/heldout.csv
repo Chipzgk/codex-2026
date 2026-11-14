@@ -1,0 +1,5 @@
+method,precision,recall,f1,event_recall,median_delay_min,false_alarms_per_day,faults_as_danger,seeds
+threshold,0.62,0.542,0.579,1.0,42.0,2.43,0.256,11 12 13 14 15
+iforest,0.172,0.01,0.018,0.182,122.0,0.51,0.051,11 12 13 14 15
+fuzzy_only,0.633,0.539,0.581,1.0,52.0,1.66,0.154,11 12 13 14 15
+hybrid,0.633,0.539,0.581,1.0,52.0,1.66,0.154,11 12 13 14 15

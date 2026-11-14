@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+scikit-fuzzy
+matplotlib
+tabulate
+fastapi
+uvicorn[standard]
+kaggle
+joblib
+httpx
