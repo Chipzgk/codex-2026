@@ -2,6 +2,19 @@
 
 > Status: v2 · 14/11/2026 · Doanh thu và quy mô là **giả thuyết**. Thông tin đối thủ lấy từ các trang ở mục Nguồn.
 
+## 0. Quy mô thị trường
+
+| Chỉ số | Giá trị | Nguồn |
+|---|---|---|
+| Diện tích nuôi cá rô phi Việt Nam, 2024 | 42.716 ha | Cục Thủy sản và Kiểm ngư, qua [Nông nghiệp & Môi trường, 10/11/2025](https://nongnghiepmoitruong.vn/ca-ro-phi-viet-nam-nhieu-loi-the-nhung-chua-but-pha-d782970.html) |
+| Sản lượng cá rô phi Việt Nam, 2024 | hơn 316.000 tấn | Như trên |
+| Sản lượng cá rô phi Việt Nam, 2015 → 2025 | 188.000 → 420.000 tấn | [Nông nghiệp & Môi trường, 04/08/2026](https://nongnghiepmoitruong.vn/thao-go-diem-nghen-de-phat-trien-nganh-hang-ca-ro-phi-d824589.html) |
+| Sản lượng rô phi thế giới, 2021 | hơn 7,2 triệu tấn | [Aqua Culture Asia Pacific](https://aquaasiapac.com/2025/02/04/the-global-tilapia/) (bài số 7–8/2023) |
+| Nước sản xuất lớn nhất | Trung Quốc 1,75 triệu tấn (2022), Indonesia 1,2 triệu tấn, Ai Cập hơn 1 triệu tấn — ba nước chiếm gần 75% | Như trên |
+| Dự báo thế giới, 2030 | 9 triệu tấn | Như trên |
+
+Chưa có số liệu về số hộ nuôi hay số ao đã lắp cảm biến; đây là con số cần thu thập khi pilot.
+
 ## 1. Bãi đáp đầu tiên
 
 Hộ nuôi cá ao quy mô nhỏ dùng Android. Phỏng vấn U01 ([USER_RESEARCH.md](USER_RESEARCH.md)) cho thấy hai nhóm:
@@ -44,6 +57,10 @@ Khác biệt cần chứng minh: tách lỗi cảm biến khỏi rủi ro thật
 - Dữ liệu phản hồi "cảnh báo đúng/sai" để train lại theo giai đoạn nuôi (train lại giảm báo giả 23% trong thí nghiệm concept drift).
 
 ## Nguồn (truy cập 14/11/2026)
+
+- [Cá rô phi Việt Nam nhiều lợi thế nhưng chưa bứt phá — Nông nghiệp & Môi trường, 10/11/2025](https://nongnghiepmoitruong.vn/ca-ro-phi-viet-nam-nhieu-loi-the-nhung-chua-but-pha-d782970.html)
+- [Tháo gỡ điểm nghẽn để phát triển ngành hàng cá rô phi — Nông nghiệp & Môi trường, 04/08/2026](https://nongnghiepmoitruong.vn/thao-go-diem-nghen-de-phat-trien-nganh-hang-ca-ro-phi-d824589.html)
+- [The global tilapia — Aqua Culture Asia Pacific](https://aquaasiapac.com/2025/02/04/the-global-tilapia/)
 
 - [E-Sensor Aqua — App Store](https://apps.apple.com/vc/app/e-sensor-aqua/id1444251288)
 - [Phòng chống dịch bệnh thủy sản bằng công nghệ: Bài 3 — Tôm khỏe nhờ ứng dụng AI — Nông nghiệp & Môi trường, 16/08/2025](https://nongnghiepmoitruong.vn/bai-3-tom-khoe-nho-ung-dung-ai-d767545.html)
