@@ -1,7 +1,9 @@
-# PondGuard mobile (Expo SDK 58)
+# PondGuard mobile — Expo (SDK 58)
+
+App Expo/React Native của PondGuard. App Flutter của team nằm ở `../mobile/`.
 
 ```bash
-cd mobile
+cd mobile-expo
 npm install
 npx expo start        # quét QR bằng Expo Go (SDK 58)
 ```

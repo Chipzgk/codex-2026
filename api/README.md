@@ -31,4 +31,4 @@ LLM chỉ viết kịch bản JSON (loại sự cố, giờ, cường độ, câ
 Không có key hoặc gọi lỗi → tự dùng kịch bản mẫu theo từ khóa (`source` = `fallback:...`). Kịch bản LLM chỉ dùng cho demo,
 **không** dùng để tính Precision/Recall.
 
-`python api/export_demo.py` → `mobile/assets/demo.json` cho chế độ offline (nếu có key, 3 kịch bản mẫu sẽ do LLM viết rồi đóng băng).
+`python api/export_demo.py` → `mobile-expo/assets/demo.json` cho chế độ offline (nếu có key, 3 kịch bản mẫu sẽ do LLM viết rồi đóng băng).

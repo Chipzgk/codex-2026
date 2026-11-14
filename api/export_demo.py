@@ -1,5 +1,5 @@
 """Bundle demo runs as JSON for the app's OFFLINE mode (no network needed on stage).
-python api/export_demo.py  ->  mobile/assets/demo.json
+python api/export_demo.py  ->  mobile-expo/assets/demo.json
 If OPEN_API_KEY/MODEL_ID are set (.env), the prompt scenarios are written by the LLM once here and frozen.
 """
 import json
@@ -34,7 +34,7 @@ for prompt in PROMPTS:
     r["scenario"], r["source"], r["event"] = sc, source, None
     out["scenarios"][f"prompt|{prompt}"] = r
     print(f"prompt: {prompt!r} -> {source}: {sc['title']} {[e['type'] for e in sc['events']]}")
-dst = Path(__file__).resolve().parents[1] / "mobile" / "assets" / "demo.json"
+dst = Path(__file__).resolve().parents[1] / "mobile-expo" / "assets" / "demo.json"
 dst.parent.mkdir(parents=True, exist_ok=True)
 dst.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 print(f"wrote {dst} ({dst.stat().st_size / 1024:.0f} KB), {len(out['scenarios'])} scenarios")
